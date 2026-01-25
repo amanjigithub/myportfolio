@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Badhautiya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Aman.</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Hi, I'm Aman</h1>
+            <h2>Computer Science Engineer</h2>
+            <p>I develop machine learning models, cloud-native applications, and full-stack solutions that make a difference.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+            <div class="about-card">
+                <div class="about-card-icon">🚀</div>
+                <h3>ML Engineer</h3>
+                <p>Building CNNs and models with TensorFlow, Keras, and Scikit-learn</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">☁️</div>
+                <h3>Cloud Developer</h3>
+                <p>DevOps and cloud-native applications with AWS and CI/CD pipelines</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">💻</div>
+                <h3>Full Stack</h3>
+                <p>Web development with React, Flask, and modern frameworks</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>DevOps - Cloud Computing</h3>
+                <p class="timeline-date">Jun 2024 - Jul 2024 | GLA University, Mathura</p>
+                <p>Integrated authentication and security features in cloud-native apps using shell scripting and system-level access. Resolved deployment issues and collaborated with a 4-member team to simulate production-like CI/CD pipelines.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>B.Tech in Computer Science</h3>
+                <p class="timeline-date">Expected Apr 2027 | GLA University, Mathura</p>
+                <p>Relevant Coursework: Computer Network, Operating Systems, DBMS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-icon">🐍</div>
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">☕</div>
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">⚛️</div>
+                <div class="skill-name">React</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🧠</div>
+                <div class="skill-name">TensorFlow</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">☁️</div>
+                <div class="skill-name">AWS</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🔧</div>
+                <div class="skill-name">Git</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🗄️</div>
+                <div class="skill-name">SQL</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🌐</div>
+                <div class="skill-name">Flask</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🍎</div>
+                <div class="project-content">
+                    <h3>Fruit & Vegetable Classification</h3>
+                    <p>Built a CNN using TensorFlow and OpenCV, achieving 94% accuracy and reduced training time by 25%.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">TensorFlow</span>
+                        <span class="project-tag">OpenCV</span>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🏠</div>
+                <div class="project-content">
+                    <h3>House Price Prediction</h3>
+                    <p>Developed a linear regression model using Scikit-learn with improved accuracy by 18% through data preprocessing.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Scikit-learn</span>
+                        <span class="project-tag">ML</span>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <canvas id="earth-canvas"></canvas>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="What's your name?" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Email</label>
+                    <input type="email" placeholder="What's your email?" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea placeholder="What do you want to say?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="mailto:aman93977@gmail.com">📧</a>
+            <a href="https://www.linkedin.com/in/amanbadhautiya-3468a7193/" target="_blank">💼</a>
+            <a href="https://github.com" target="_blank">💻</a>
+        </div>
+        <p>&copy; 2026 Aman Badhautiya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
