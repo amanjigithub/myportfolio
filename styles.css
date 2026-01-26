@@ -112,6 +112,12 @@ nav {
     margin-bottom: 2rem;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
 .cta-button {
     display: inline-block;
     padding: 1rem 2.5rem;
@@ -127,6 +133,15 @@ nav {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(145, 94, 255, 0.6);
+}
+
+.cta-button-secondary {
+    background: transparent;
+    border: 2px solid #915eff;
+}
+
+.cta-button-secondary:hover {
+    background: #915eff;
 }
 
 /* Section Styles */
