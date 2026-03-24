@@ -381,6 +381,10 @@ section {
 #contact {
     background: linear-gradient(180deg, #050816 0%, #0a0e27 100%);
     position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #earth-canvas {
@@ -393,10 +397,88 @@ section {
 }
 
 .contact-container {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     z-index: 10;
+    text-align: center;
+}
+
+.contact-main-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-subtitle {
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.contact-subtitle .highlight {
+    color: #915eff;
+    font-weight: bold;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #915eff;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    position: relative;
+}
+
+.contact-icon:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-10px);
+    border-color: #915eff;
+    box-shadow: 0 10px 30px rgba(145, 94, 255, 0.4);
+}
+
+.contact-icon.active {
+    border-color: #915eff;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(145, 94, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 15px rgba(145, 94, 255, 0);
+    }
+}
+
+.contact-icon svg {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.contact-icon:hover svg {
+    transform: scale(1.1);
 }
 
 .contact-form {
@@ -604,6 +686,29 @@ footer {
         padding: 2rem 1.5rem;
     }
 
+    .contact-main-title {
+        font-size: 2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .contact-icons {
+        gap: 1.5rem;
+    }
+
+    .contact-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
     .form-group input,
     .form-group textarea {
         font-size: 0.95rem;
@@ -673,6 +778,29 @@ footer {
 
     .contact-form {
         padding: 1.5rem 1rem;
+    }
+
+    .contact-main-title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .contact-icons {
+        gap: 1rem;
+    }
+
+    .contact-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact-icon svg {
+        width: 32px;
+        height: 32px;
     }
 
     .submit-btn {
