@@ -8,7 +8,7 @@ A modern, interactive 3D portfolio website showcasing my skills, projects, and e
 
 ## 🌐 Live Demo
 
-Visit my portfolio: [https://amanjigithub.github.io/myportfolio/](https://amanjigithub.github.io/myportfolio/)
+Visit my portfolio: [https://amanjigithub.github.io/myportfolio/](https://amanbadhautiya.netlify.app/))
 
 ## ✨ Features
 
